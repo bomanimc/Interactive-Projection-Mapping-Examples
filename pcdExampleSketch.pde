@@ -21,9 +21,11 @@ void draw() {
   for (Hand hand : leap.getHands ()) {
     for (Finger finger : hand.getFingers()) {
       PVector fingerPosition = finger.getPosition();
+      float x = fingerPosition.x;
+      float y = fingerPosition.y;
       float ellipseSize = fingerPosition.z;
       canvas.fill(random(255), random(255), random(255));
-      canvas.ellipse(fingerPosition.x, fingerPosition.y, ellipseSize, ellipseSize);
+      canvas.ellipse(x, y, ellipseSize, ellipseSize);
     }
   }
   
@@ -31,20 +33,3 @@ void draw() {
   image(canvas, 0, 0);
   server.sendImage(canvas);
 }
-
-void leapOnInit() {
-   println("Leap Motion Init");
-}
-
-void leapOnConnect() {
-   println("Leap Motion Connect");
-}
-
-void leapOnDisconnect() {
-   println("Leap Motion Disconnect");
-}
-
-void leapOnExit() {
-   println("Leap Motion Exit");
-}
- 
