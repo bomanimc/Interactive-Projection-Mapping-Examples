@@ -18,7 +18,7 @@ void draw() {
   canvas.beginDraw();
   canvas.background(0);
   
-  for (Hand hand : leap.getHands ()) {
+  for (Hand hand : leap.getHands()) {
     for (Finger finger : hand.getFingers()) {
       PVector fingerPosition = finger.getPosition();
       float x = fingerPosition.x;
