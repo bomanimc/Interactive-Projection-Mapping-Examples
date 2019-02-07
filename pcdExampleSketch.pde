@@ -17,6 +17,8 @@ void setup() {
 void draw() {
   canvas.beginDraw();
   canvas.background(0);
+  fill(200);
+  canvas.rect(0, 0, 30, 30); 
   
   for (Hand hand : leap.getHands()) {
     for (Finger finger : hand.getFingers()) {
@@ -24,7 +26,7 @@ void draw() {
       float x = fingerPosition.x;
       float y = fingerPosition.y;
       float ellipseSize = fingerPosition.z;
-      canvas.fill(random(255), random(255), random(255));
+      canvas.fill(255);
       canvas.ellipse(x, y, ellipseSize, ellipseSize);
     }
   }
