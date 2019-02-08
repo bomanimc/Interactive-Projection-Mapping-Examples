@@ -1,15 +1,10 @@
-import de.voidplus.leapmotion.*;
 import codeanticode.syphon.*;
 
-LeapMotion leap;
 PGraphics canvas;
 SyphonServer server;
 
 void setup() {
   size(600, 600, P2D);
-
-  leap = new LeapMotion(this);
-  leap.allowBackgroundApps();
   canvas = createGraphics(600, 600, P2D);
   server = new SyphonServer(this, "Processing Syphon Server");
 }
@@ -17,19 +12,11 @@ void setup() {
 void draw() {
   canvas.beginDraw();
   canvas.background(0);
-  fill(200);
-  canvas.rect(0, 0, 30, 30); 
   
-  for (Hand hand : leap.getHands()) {
-    for (Finger finger : hand.getFingers()) {
-      PVector fingerPosition = finger.getPosition();
-      float x = fingerPosition.x;
-      float y = fingerPosition.y;
-      float ellipseSize = fingerPosition.z;
-      canvas.fill(255);
-      canvas.ellipse(x, y, ellipseSize, ellipseSize);
-    }
-  }
+  float x = mouseX;
+  float y = mouseY;
+  canvas.fill(255);
+  canvas.ellipse(x, y, 50, 50);
   
   canvas.endDraw();
   image(canvas, 0, 0);
