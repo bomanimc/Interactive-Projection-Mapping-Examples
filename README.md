@@ -2,6 +2,15 @@
 
 This repository complements my workshop on interactive projection mapping at [Processing Community Day NYC 2019](http://processing.nyc/). In this workshop, the audience will learn how to transform a Processing sketch into an interactive projection installation. We’ll use Syphon to stream the output of a Processing sketch into projection mapping tools, learn how to map our projected sketch onto a unique surface, and make our projection installation interactive by integrating a basic sensor.
 
+During this demo, we will use the `SimpleCircleExample` and `SimpleCircleExampleWithSyphon`. This repository also includes some example sketches using LeapMotion.
+
+### Basic Materials
+- Projector
+- Laptop
+- [MadMapper](https://madmapper.com/madmapper/) (see alternatives below)
+- [Processing](https://processing.org/)
+- [ScreenCaptureSyphon](http://techlife.sg/ScreenCaptureSyphon/) (for Windows users, try OBS w/ Spout Camera)
+
 ### Talk Slides
 You can find the Google Presentation [here](https://docs.google.com/presentation/d/1GfVKDLk5o_yNBy4mst4nDapCcCRiyqyqsiHV5sRelnk/edit?usp=sharing).
 
