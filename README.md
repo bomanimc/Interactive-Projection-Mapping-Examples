@@ -11,7 +11,7 @@ Iterations of this workshop have been presented at The School of [Afrotectopia](
 - [MadMapper](https://madmapper.com/madmapper/) (see alternatives below). [Download the free trial version here](https://madmapper.com/try-buy/try-madmapper/).
 - [Processing](https://processing.org/download/).
 
-For participants hoping to projection map content from browser-based p5 sketches, try [ScreenCaptureSyphon](http://techlife.sg/ScreenCaptureSyphon/). Windows users, try OBS w/ Spout Camera.
+For participants hoping to projection map content from browser-based p5 sketches, try [Syphoner](http://www.sigmasix.ch/syphoner/) (free) or [ScreenCaptureSyphon](http://techlife.sg/ScreenCaptureSyphon/) ($10). Windows users, try OBS w/ Spout Camera.
 
 ### Software Examples
 
